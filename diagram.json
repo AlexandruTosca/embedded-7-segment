@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-7segment", "id": "sevseg1", "top": -4.62, "left": -62.12, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -49.65,
+      "left": 125.73,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -40.99,
+      "left": 74.4,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": -25.65,
+      "left": 27.73,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": -14.98,
+      "left": -8.27,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r5",
+      "top": 179.01,
+      "left": -60.94,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r6",
+      "top": 150.35,
+      "left": -54.93,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r7",
+      "top": 123.68,
+      "left": -49.6,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r8",
+      "top": 101.02,
+      "left": 25.73,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "uno:7", "r1:2", "cyan", [ "v0" ] ],
+    [ "r1:1", "sevseg1:A", "cyan", [ "v0" ] ],
+    [ "uno:8", "r2:2", "yellow", [ "v0" ] ],
+    [ "r2:1", "sevseg1:B", "yellow", [ "v0" ] ],
+    [ "uno:9", "r3:2", "limegreen", [ "v0" ] ],
+    [ "r3:1", "sevseg1:C", "limegreen", [ "v0" ] ],
+    [ "uno:10", "r4:2", "magenta", [ "v0" ] ],
+    [ "r4:1", "sevseg1:D", "magenta", [ "v0" ] ],
+    [ "uno:11", "r5:2", "purple", [ "v0" ] ],
+    [ "r5:1", "sevseg1:E", "purple", [ "v0" ] ],
+    [ "uno:12", "r6:2", "white", [ "v0" ] ],
+    [ "r6:1", "sevseg1:F", "white", [ "v0" ] ],
+    [ "uno:13", "r7:2", "blue", [ "v0" ] ],
+    [ "r7:1", "sevseg1:G", "blue", [ "v0" ] ],
+    [ "uno:6", "r8:2", "#8f4814", [ "v0" ] ],
+    [ "r8:1", "sevseg1:DP", "#8f4814", [ "v0" ] ],
+    [ "sevseg1:COM.2", "uno:GND.1", "black", [ "h0" ] ],
+    [ "sevseg1:COM.1", "uno:5V", "red", [ "h199.6", "v119.89" ] ]
+  ],
+  "dependencies": {}
+}
